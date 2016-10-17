@@ -20,13 +20,11 @@ int main(){
 
 	cin >> N;
 
-	for(int i=0; i<N; i++){
+	for(int i=0; i<N; i++)
 		cin >> A_i[i];
-	}
 
-	for(int i=N-1; i>=0; i--){
+	for(int i=N-1; i>=0; i--)
 		cout << A_i[i] << " ";
-	}
 
 	return 0;
 
