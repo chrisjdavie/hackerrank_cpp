@@ -5,6 +5,8 @@
  *
  * (tutorials will cover arrays soon I'm sure...)
  *
+ * Turns out there's a "max" in c++
+ *
  * main.cpp
  *
  *  Created on: Oct 17, 2016
@@ -12,23 +14,10 @@
  */
 #include <iostream>
 #include <cstdio>
-#include <climits>
 using namespace std;
 
 int max_of_four(int a, int b, int c, int d){
-
-	int max = INT_MIN;
-
-	if (a > max)
-		max = a;
-	if (b > max)
-		max = b;
-	if (c > max)
-	    max = c;
-	if (d > max)
-	    max = d;
-
-	return max;
+	return max(max(a,b),max(c,d));
 }
 
 int main(){
