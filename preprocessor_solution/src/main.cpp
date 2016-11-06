@@ -4,9 +4,9 @@
  *  Created on: Nov 6, 2016
  *      Author: chris
  */
-#define foreach(v, i) for(int i=0; i<n; i++)
-#define INF 10000000
-#define FUNCTION(name, the_operator) void name (int &a, int &b) { int result; if ( a the_operator b ) result = a; if ( b the_operator a ) result = b; a = result;  }
+#define foreach(list, index) for(int index=0; index<list.size(); index++)
+#define INF 1e9
+#define FUNCTION(name, the_operator) void name (int &a, int b) { if ( b the_operator a ) a = b;}
 #define io(v) cin >> v
 #define toStr(x) #x
 
